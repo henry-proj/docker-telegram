@@ -11,7 +11,7 @@ RUN \
   echo "**** download Telegram ****" && \
   curl -L -o \
      /tmp/tsetup.tar.xz \
-     https://github.com/telegramdesktop/tdesktop/releases/download/v6.1.0/tsetup.6.1.0.tar.xz && \
+     https://github.com/telegramdesktop/tdesktop/releases/download/v6.1.1/tsetup.6.1.1.tar.xz && \
   echo "**** install packages ****" && \
   apt-get update && \
   apt-get install -y --no-install-recommends xz-utils libgtk-3-0 && \
