@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=6.1.1
+VERSION=6.1.2
 
 OS_TYPE=$(uname)
 
