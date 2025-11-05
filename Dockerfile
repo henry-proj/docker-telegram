@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
+FROM ghcr.io/linuxserver/baseimage-selkies:debiantrixie
 
 # title
 ENV TITLE=Telegram
@@ -6,12 +6,12 @@ ENV TITLE=Telegram
 RUN \
   echo "**** add icon ****" && \
   curl -o \
-    /kclient/public/icon.png \
+    /usr/share/selkies/www/icon.png \
     "https://avatars.githubusercontent.com/u/6113871?s=48&v=4" && \
   echo "**** download Telegram ****" && \
   curl -L -o \
      /tmp/tsetup.tar.xz \
-     https://github.com/telegramdesktop/tdesktop/releases/download/v6.1.2/tsetup.6.1.2.tar.xz && \
+     https://github.com/telegramdesktop/tdesktop/releases/download/v6.1.3/tsetup.6.1.3.tar.xz && \
   echo "**** install packages ****" && \
   apt-get update && \
   apt-get install -y --no-install-recommends xz-utils libgtk-3-0 && \
